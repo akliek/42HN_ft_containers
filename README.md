@@ -15,10 +15,14 @@ Note:
 
 All containers are re-implemented as in C++98 version original one.
 
+# Red-black tree example
+
+![alt text](https://github.com/akliek/42HN_ft_containers/blob/master/red_black_tree_example.png?raw=true)
+
 # Usage
 ```
       - stack (with vector as underlying container);
       - vector;
-      - map (with red black tree as inner data);
-      - set (with red black tree as inner data).
+      - map (with red-black tree as inner data);
+      - set (with red-black tree as inner data).
 ```
