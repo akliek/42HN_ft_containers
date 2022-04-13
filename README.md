@@ -15,11 +15,6 @@ Note:
 
 All containers are re-implemented as in C++98 version original one.
 
-# Clone:
-Open a terminal and run following command:
-```
-git clone <repository url>
-```
 # Usage
 ```
       - stack (with vector as underlying container);
