@@ -146,6 +146,8 @@ namespace ft
 			const_reference	front() const { return (_arr[0]); }
 			reference		back() { return (_arr[_size - 1]); }
 			const_reference	back() const { return (_arr[_size - 1]); }
+			pointer			data() { return (_arr); }
+			const_pointer	data() const { return (_arr); }
 			reference		at(size_type pos)
 			{
 				if (pos >= _size)
@@ -306,7 +308,10 @@ namespace ft
 				}
 			iterator	erase(iterator pos)
 			{
-				erase(pos, pos + 1);
+                for (size_type i = pos - this->begin(); i < this->size() - 1; ++i)
+                    *(_arr + i) = *(_arr + i + 1);
+                _alloc.destroy(_arr + _size - 1);
+				--_size;
 
 				return (pos);
 			}

@@ -88,7 +88,6 @@ namespace ft
 			}
 	};
 	/* ========== Non-member functions ========== */
-
 	template <class iter1, class iter2>
 		typename ft::vector_iterator<iter1>::difference_type
 		operator-(const ft::vector_iterator<iter1>& lhs, const ft::vector_iterator<iter2>& rhs)
